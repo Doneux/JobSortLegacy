@@ -1,5 +1,5 @@
 
-export function sort(jobs, by) {
+export function jobsort(jobs, by) {
     //takes jobs, an array of Job types
     //takes by, a string indicating what to sort by
     //returns a sorted array of jobs
@@ -37,7 +37,7 @@ export function sort(jobs, by) {
     return jobs;
 }
 
-export function filter(jobs, by) {
+export function jobfilter(jobs, by) {
     //takes jobs, an array of Job types
     //takes by, a string indicating what to filter by
     //returns a filtered array of jobs
@@ -47,6 +47,6 @@ export function filter(jobs, by) {
 }
 
 //may be worth waiting to implement at a later date
-export function search(jobs, by) {
+export function jobsearch(jobs, by) {
     return;
 }
