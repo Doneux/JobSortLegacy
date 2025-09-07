@@ -4,11 +4,11 @@ export function jobsort(jobs, by) {
     //takes by, a string indicating what to sort by
     //returns a sorted array of jobs
 
-    //if sort by name (alphabetical)
-    if (by === "name") {
+    //if sort by title (alphabetical)
+    if (by === "title") {
         //the "..." operator makes a spread of each element in an array
         //wrapping it in [] essentially makes a copy of the array
-        return [...jobs].sort((a, b) => a.name.localeCompare(b.name));
+        return [...jobs].sort((a, b) => a.title.localeCompare(b.title));
     }
 
     //if sort by date applied (oldest first)
