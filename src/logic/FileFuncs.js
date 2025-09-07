@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
-import Job from "../Job.js"; // adjust if Job.js lives elsewhere
+import Job from "./Job.js"; // adjust if Job.js lives elsewhere
 
 // Path to the JSON file
-const JOBS_FILE = path.resolve("src/data/jobs.json");
+const JOBS_FILE = path.resolve("../data/jobs.json");
 
 // Save jobs to jobs.json
 export function saveJobsToFile(jobs) {
