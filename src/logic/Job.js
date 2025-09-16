@@ -1,4 +1,4 @@
-export default class Job {
+class Job {
   constructor({
     title = "",
     company = "",
@@ -35,3 +35,5 @@ export default class Job {
     };
   }
 }
+
+module.exports = { Job };

@@ -1,6 +1,6 @@
 import { saveJobsToFile, loadJobsFromFile } from "./FileFuncs.js";
 
-import Job from "./Job.js";
+import { Job } from "./Job.js";
 
 import { jobsort, jobfilter, jobsearch } from "./SortFuncs.js";
 

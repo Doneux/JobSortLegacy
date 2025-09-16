@@ -37,11 +37,33 @@ export function jobsort(jobs, by) {
     return jobs;
 }
 
-export function jobfilter(jobs, by) {
+export function jobfilter(jobs, by, key) {
     //takes jobs, an array of Job types
     //takes by, a string indicating what to filter by
     //returns a filtered array of jobs
     //NOTE: keep a backup of current jobs array when filter is removed
+
+    if (by === "title") {
+        return jobs.filter(job => job.title.toLowerCase() === key.toLowerCase());
+    }
+
+    if (by === "company") {
+        return jobs.filter(job => job.company.toLowerCase() === key.toLowerCase());
+    }
+
+    if (by === "salary") {
+        return jobs.filter(job => job.salary === Number(key));
+    }
+
+    if (by === "status") {
+        return jobs.filter(job => job.status === key.toLowerCase());
+    }
+
+    if (by === "skills") {
+            return jobs.filter(job =>
+        job.skills.some(s => s.toLowerCase() === key.toLowerCase())
+    );
+    }
 
     return jobs;
 }
