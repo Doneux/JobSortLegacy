@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { jobfilter, jobsort } from "./logic/SortFuncs";
-import { Job } from "./logic/Job";
+import { Job } from "./logic/Job.js";
 
 function JobCard({ job, index, onDelete, onEdit }) {
   return (

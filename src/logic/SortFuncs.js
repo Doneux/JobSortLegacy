@@ -61,8 +61,7 @@ export function jobfilter(jobs, by, key) {
 
     if (by === "skills") {
             return jobs.filter(job =>
-        job.skills.some(s => s.toLowerCase() === key.toLowerCase())
-    );
+        job.skills.some(s => s.toLowerCase() === key.toLowerCase()));
     }
 
     return jobs;
